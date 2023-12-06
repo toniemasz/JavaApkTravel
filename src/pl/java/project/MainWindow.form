@@ -16,7 +16,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="1344a" class="javax.swing.JButton" binding="nowaTrasaButton" default-binding="true">
+          <component id="1344a" class="javax.swing.JButton" binding="newTravelButton" default-binding="true">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -32,7 +32,7 @@
               <text value="Se jebnij"/>
             </properties>
           </component>
-          <component id="fbcf7" class="javax.swing.JButton" binding="edytujTrasęButton" default-binding="true">
+          <component id="fbcf7" class="javax.swing.JButton" binding="editTravelButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -42,7 +42,7 @@
           </component>
         </children>
       </grid>
-      <component id="4d2d5" class="javax.swing.JButton" binding="wyjdźButton" default-binding="true">
+      <component id="4d2d5" class="javax.swing.JButton" binding="exitButton" default-binding="true">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -50,7 +50,7 @@
           <text value="Wyjdź"/>
         </properties>
       </component>
-      <component id="62e5d" class="javax.swing.JButton" binding="zapiszButton" default-binding="true">
+      <component id="62e5d" class="javax.swing.JButton" binding="saveButton" default-binding="true">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -58,7 +58,7 @@
           <text value="Zapisz"/>
         </properties>
       </component>
-      <component id="697bd" class="javax.swing.JButton" binding="wczytajButton" default-binding="true">
+      <component id="697bd" class="javax.swing.JButton" binding="readButton" default-binding="true">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
