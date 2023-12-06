@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlanowaniePodrozyAPK.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/StartApp.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/StartApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/Window.java" afterDir="false" />
-    </list>
+    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,11 +59,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701879579224</updated>
-      <workItem from="1701879580411" duration="7583000" />
+      <workItem from="1701879580411" duration="7911000" />
     </task>
+    <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
+      <created>1701887375464</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701887375464</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno" />
   </component>
 </project>
