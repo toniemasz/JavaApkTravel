@@ -17,9 +17,10 @@ public class TravelManage {
     }
 
     public JList displayTravelList(){ //do wyświetlenia listy w GUI
-        DefaultListModel<Travel> listModel = new DefaultListModel<>();
-        travelList.forEach(listModel::addElement);
-        JList<Travel> list = new JList<>(listModel);
+        DefaultListModel<String> listModel = new DefaultListModel<>();
+        travelList.forEach(travel -> listModel.addElement(travel.getTitle()));
+
+        JList<String> list = new JList<>(listModel);
         JScrollPane scrollPane = new JScrollPane(list);
         return list;
     }
@@ -40,6 +41,11 @@ public class TravelManage {
         // Ta metoda wyświetla koszty podróży w interfejsie graficznym
         JOptionPane.showMessageDialog(null, "Koszt podróży wynosi: " + travelCost + " zł", "Koszt podróży", JOptionPane.INFORMATION_MESSAGE);
     }
+
+    public List<Travel> getTravelList() {
+        return travelList;
+    }
+
 
 
 }

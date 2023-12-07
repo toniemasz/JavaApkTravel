@@ -1,16 +1,33 @@
 package pl.java.project;
 
 public class Travel {
+    @Override
+    public String toString() {
+        return "Travel{" +
+                "title='" + title + '\'' +
+                ", kilometres=" + kilometres +
+                ", fromPlace='" + fromPlace + '\'' +
+                ", toPlace='" + toPlace + '\'' +
+                ", date='" + date + '\'' +
+                '}';
+    }
+
+    String title;
     int kilometres;
     String fromPlace;
 
     String toPlace;
     String date;
-    public Travel(int kilometres, String fromPlace, String toPlace, String date) {
+    public Travel(String title,int kilometres, String fromPlace, String toPlace, String date) {
+        this.title = title;
         this.kilometres = kilometres;
         this.fromPlace = fromPlace;
         this.toPlace = toPlace;
         this.date = date;
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     public int getKilometres() {

@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/GoogleMapsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/Travel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" afterDir="false" />
+    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="dodane:&#10;GoogleMapsService.java&#10;Travel.java&#10;TravelManage.java&#10;i tam coś jeszcze pododawałem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Travel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +58,26 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.java.project.Runner" />
+      <module name="PlanowaniePodrozyAPK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.java.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Runner" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,7 +88,8 @@
       <updated>1701879579224</updated>
       <workItem from="1701879580411" duration="8284000" />
       <workItem from="1701888081901" duration="1960000" />
-      <workItem from="1701893879659" duration="3200000" />
+      <workItem from="1701893879659" duration="3603000" />
+      <workItem from="1701904804066" duration="3153000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -94,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701888318522</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dodane:&#10;GoogleMapsService.java&#10;Travel.java&#10;TravelManage.java&#10;i tam coś jeszcze pododawałem">
+      <created>1701897213967</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701897213967</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno" />
+    <MESSAGE value="dodane:&#10;GoogleMapsService.java&#10;Travel.java&#10;TravelManage.java&#10;i tam coś jeszcze pododawałem" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodane:&#10;GoogleMapsService.java&#10;Travel.java&#10;TravelManage.java&#10;i tam coś jeszcze pododawałem" />
   </component>
 </project>
