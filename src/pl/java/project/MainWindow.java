@@ -18,27 +18,6 @@ public class MainWindow {
     public MainWindow() {
 
 
-        newTravelButton.addActionListener(e -> {
-            String title = JOptionPane.showInputDialog(null, "Wpisz Tytuł");
-            int km = 100; //tutaj będzie funkcja która będzie obliczać kilometry z Api google ale to potem
-            String fromPlace = JOptionPane.showInputDialog(null, "Wpisz skąd chcesz jechać");
-            ;
-            String toPlace = JOptionPane.showInputDialog(null, "Wpisz dokąd");
-            ;
-            String date = JOptionPane.showInputDialog(null, "Wpisz date");
-            ;
-
-            Travel travel = new Travel(title, km, fromPlace, toPlace, date);
-            System.out.println(travel);
-            tManage.addTravel(travel);
-            JOptionPane.showMessageDialog(null, "NOWE");//test
-            System.out.println("Tytuły podróży: " + tManage.displayTravelList().getModel());
-            list1.setModel(tManage.displayTravelList().getModel());
-            list1.setVisible(true);
-
-
-        });
-
         editTravelButton.addActionListener(e -> {
             //tutaj dodać funkcjonalność która edytuje trasę
             JOptionPane.showMessageDialog(null, "EDYTUJ");//test
