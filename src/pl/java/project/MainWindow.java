@@ -3,6 +3,7 @@ package pl.java.project;
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.List;
 
 public class MainWindow {
     TravelManage tManage = new TravelManage();
@@ -33,6 +34,25 @@ public class MainWindow {
 
         });
 
+        saveButton.addActionListener(e -> {
+            FilesManager file = new FilesManager();
+            FilesManager.saveToFile(tManage.travelList, "travels.txt");
+        });
+
+        readButton.addActionListener(e -> {
+            List<Travel> loadedTravels = FilesManager.loadFromFile("travels.txt");
+
+            if (loadedTravels != null) {
+                tManage.setTravelList(loadedTravels);
+                list1.setModel(tManage.displayTravelList().getModel());
+                list1.setVisible(true);
+                JOptionPane.showMessageDialog(null, "Wczytano podróże z pliku.");
+            } else {
+                JOptionPane.showMessageDialog(null, "Błąd podczas wczytywania z pliku.", "Błąd", JOptionPane.ERROR_MESSAGE);
+            }
+        });
+
+
         list1.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -49,9 +69,9 @@ public class MainWindow {
         newTravelButton.addActionListener(e -> {
             String title = JOptionPane.showInputDialog(null, "Wpisz Tytuł");
             int km = 100; // Tutaj będzie funkcja, która oblicza kilometry z Api Google, ale to potem
-            String fromPlace = JOptionPane.showInputDialog(null, "Wpisz skąd chcesz jechać");
-            String toPlace = JOptionPane.showInputDialog(null, "Wpisz dokąd");
-            String date = JOptionPane.showInputDialog(null, "Wpisz datę");
+            String fromPlace = JOptionPane.showInputDialog(title, "Wpisz skąd chcesz jechać");
+            String toPlace = JOptionPane.showInputDialog(fromPlace, "Wpisz dokąd");
+            String date = JOptionPane.showInputDialog(toPlace, "Wpisz datę");
 
             Travel travel = new Travel(title, km, fromPlace, toPlace, date);
             System.out.println(travel);

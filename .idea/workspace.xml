@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="Dodałem dodawanie Trasy. Trasa dodaje się do listy i się wyświetla obok. Jeżeli się kliknie na obiekt wyświetlą się szczegóły. Kod chyba jest do poprawy bo trochę jest zagmatwany">
+    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="Naprawiony błąd z podwójnym actionListenerem w klasie MainWindow.java">
+      <change afterPath="$PROJECT_DIR$/src/pl/java/project/FilesManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Travel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +90,8 @@
       <workItem from="1701888081901" duration="1960000" />
       <workItem from="1701893879659" duration="3603000" />
       <workItem from="1701904804066" duration="3339000" />
-      <workItem from="1701908196866" duration="135000" />
+      <workItem from="1701908196866" duration="195000" />
+      <workItem from="1701955337221" duration="2617000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -124,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701908173716</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Naprawiony błąd z podwójnym actionListenerem w klasie MainWindow.java">
+      <created>1701908389129</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701908389130</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +156,7 @@
     <MESSAGE value="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno" />
     <MESSAGE value="dodane:&#10;GoogleMapsService.java&#10;Travel.java&#10;TravelManage.java&#10;i tam coś jeszcze pododawałem" />
     <MESSAGE value="Dodałem dodawanie Trasy. Trasa dodaje się do listy i się wyświetla obok. Jeżeli się kliknie na obiekt wyświetlą się szczegóły. Kod chyba jest do poprawy bo trochę jest zagmatwany" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodałem dodawanie Trasy. Trasa dodaje się do listy i się wyświetla obok. Jeżeli się kliknie na obiekt wyświetlą się szczegóły. Kod chyba jest do poprawy bo trochę jest zagmatwany" />
+    <MESSAGE value="Naprawiony błąd z podwójnym actionListenerem w klasie MainWindow.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Naprawiony błąd z podwójnym actionListenerem w klasie MainWindow.java" />
   </component>
 </project>

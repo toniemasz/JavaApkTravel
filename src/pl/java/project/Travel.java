@@ -1,6 +1,8 @@
 package pl.java.project;
 
-public class Travel {
+import java.io.Serializable;
+
+public class Travel implements Serializable {
     @Override
     public String toString() {
         return "Travel{" +

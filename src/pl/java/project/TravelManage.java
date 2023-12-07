@@ -46,6 +46,10 @@ public class TravelManage {
         return travelList;
     }
 
+    public void setTravelList(List<Travel> travelList) {
+        this.travelList = travelList;
+    }
+
 
 
 }
