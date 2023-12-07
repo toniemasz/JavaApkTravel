@@ -10,7 +10,7 @@ public class MainWindow {
     JPanel panel1;
     private JButton newTravelButton;
     private JButton seJebnijButton;
-    private JButton editTravelButton;
+    private JButton removeTravelButton;
     private JButton exitButton;
     private JButton saveButton;
     private JButton readButton;
@@ -19,9 +19,8 @@ public class MainWindow {
     public MainWindow() {
 
 
-        editTravelButton.addActionListener(e -> {
-            //tutaj dodać funkcjonalność która edytuje trasę
-            JOptionPane.showMessageDialog(null, "EDYTUJ");//test
+        removeTravelButton.addActionListener(e -> {
+            removeFromList();
         });
 
         seJebnijButton.addActionListener(e -> { //Jakiś przycisk ale wsm nie wiem co będzie robił taki zapasowy w razie czego to do kosza go
@@ -119,6 +118,23 @@ public class MainWindow {
             }
         }
         return null;
+    }
+
+    private void removeFromList() {
+        // Tutaj dodaj logikę usuwania podróży z listy
+        int selectedIndex = list1.getSelectedIndex();
+
+        if (selectedIndex >= 0 && selectedIndex < tManage.getTravelList().size()) {
+            // Usuwamy podróż z listy na podstawie indeksu
+            tManage.removeTravel(selectedIndex);
+
+            // Aktualizujemy wyświetlanie listy
+            list1.setModel(tManage.displayTravelList().getModel());
+            list1.setVisible(true);
+            JOptionPane.showMessageDialog(null, "Usunięto podróż");
+        } else {
+            JOptionPane.showMessageDialog(null, "Błąd: Zaznacz elementy do usunięcia", "Błąd", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
 

@@ -12,7 +12,7 @@ public class TravelManage {
         travelList.add(travel);
     }
 
-    public void removeTravel(Travel travel){
+    public void removeTravel(int travel){
         travelList.remove(travel);
     }
 

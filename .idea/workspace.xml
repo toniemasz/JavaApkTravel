@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="Dodano funkcjonalność, wczytywania i zapisywania listy do pliku txt i wczytywania z niego">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
