@@ -69,9 +69,9 @@ public class MainWindow {
         newTravelButton.addActionListener(e -> {
             String title = JOptionPane.showInputDialog(null, "Wpisz Tytuł");
             int km = 100; // Tutaj będzie funkcja, która oblicza kilometry z Api Google, ale to potem
-            String fromPlace = JOptionPane.showInputDialog(title, "Wpisz skąd chcesz jechać");
-            String toPlace = JOptionPane.showInputDialog(fromPlace, "Wpisz dokąd");
-            String date = JOptionPane.showInputDialog(toPlace, "Wpisz datę");
+            String fromPlace = JOptionPane.showInputDialog(null, "Wpisz skąd chcesz jechać");
+            String toPlace = JOptionPane.showInputDialog(null, "Wpisz dokąd");
+            String date = JOptionPane.showInputDialog(null, "Wpisz datę");
 
             Travel travel = new Travel(title, km, fromPlace, toPlace, date);
             System.out.println(travel);
