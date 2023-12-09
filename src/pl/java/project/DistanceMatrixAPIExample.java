@@ -1,11 +1,10 @@
 package pl.java.project;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.Properties;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -16,10 +15,25 @@ import org.xml.sax.SAXException;
 
 public class DistanceMatrixAPIExample {
 
+    String ApiKey;
+
+    private static String getApiKey(){
+        String apiKey = null;
+        Properties prop = new Properties();
+        try (InputStream input = new FileInputStream("src/pl/java/project/config.properties")) {
+            prop.load(input);
+            apiKey = prop.getProperty("api.key");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+
+        return apiKey;
+    }
+
     public static void runExample(String origin,String destination) {
         try {
             // Tworzymy URL na podstawie zapytania do API
-            String apiKey = "AIzaSyAxq-ED1tBWBAwnU26znjPHPokiE1_a86c";
+            String apiKey = getApiKey();
 
 
             // Kodujemy adresy URL

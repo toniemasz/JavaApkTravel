@@ -17,7 +17,6 @@ public class Travel implements Serializable {
     String title;
     int kilometres;
     String fromPlace;
-
     String toPlace;
     String date;
     public Travel(String title,int kilometres, String fromPlace, String toPlace, String date) {
