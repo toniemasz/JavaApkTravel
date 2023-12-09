@@ -29,4 +29,5 @@ bin/
 .DS_Store
 
 #APIKEY#
-/src/pl/java/project/config.properties
+config.properties
+

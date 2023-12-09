@@ -1,0 +1,18 @@
+GET https://maps.googleapis.com/maps/api/directions/json?origin=Warszawa&destination=Krakow&key=AIzaSyAxq-ED1tBWBAwnU26znjPHPokiE1_a86c
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-09T181611.200.json
+
+###
+
+GET https://maps.googleapis.com/maps/api/directions/json?origin=Warszawa&destination=Krakow
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-09T181452.200.json
+
+###
+
