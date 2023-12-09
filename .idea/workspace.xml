@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="runExample -&gt; API REQUEST">
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +55,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tomas\OneDrive\Pulpit\PlanowaniePodrozyAPK\src" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.DistanceMatrixAPIExample">
     <configuration name="DistanceMatrixAPIExample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DistanceMatrixAPIExample" />
@@ -126,7 +131,7 @@
       <workItem from="1701908196866" duration="195000" />
       <workItem from="1701955337221" duration="2859000" />
       <workItem from="1702150343271" duration="4192000" />
-      <workItem from="1702157050826" duration="1312000" />
+      <workItem from="1702157050826" duration="1437000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -212,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702158374562</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="runExample -&gt; API REQUEST">
+      <created>1702158432510</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702158432510</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
