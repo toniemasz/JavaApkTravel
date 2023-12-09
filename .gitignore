@@ -29,5 +29,5 @@ bin/
 .DS_Store
 
 #APIKEY#
-config.properties
+src/config.properties
 
