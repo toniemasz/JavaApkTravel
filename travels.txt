@@ -1,3 +1,2 @@
-TOMASZ,183 km,POZNAN,WROCŁAW,2 hours 3 mins
-sad,100,sa,da,ds
-kkk,100,kkk,kkkk,kkkk
+lklkklk,115 km,kakolewo,kluczewo,1 hour 27 mins
+Wrocław,181 km,Wrocław,poznan,2 hours 5 mins

@@ -17,7 +17,7 @@ public class DistanceMatrixAPIExample {
 
     String ApiKey;
 
-    private static String getApiKey(){
+    private static String getApiKey() {
         String apiKey = null;
         Properties prop = new Properties();
         try (InputStream input = new FileInputStream("src/config.properties")) {
@@ -112,9 +112,4 @@ public class DistanceMatrixAPIExample {
         }
         return new DistanceDurationResult(distance, duration);
     }
-
-    public static void main(String[] args) {
-        runExample("Poznań","Wrocław");
-    }
-
 }
