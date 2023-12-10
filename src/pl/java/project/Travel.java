@@ -10,32 +10,32 @@ public class Travel implements Serializable {
                 ", kilometres=" + kilometres +
                 ", fromPlace='" + fromPlace + '\'' +
                 ", toPlace='" + toPlace + '\'' +
-                ", date='" + date + '\'' +
+                ", date='" + duration + '\'' +
                 '}';
     }
 
     String title;
-    int kilometres;
+    String kilometres;
     String fromPlace;
     String toPlace;
-    String date;
-    public Travel(String title,int kilometres, String fromPlace, String toPlace, String date) {
+    String duration;
+    public Travel(String title, String kilometres, String fromPlace, String toPlace, String duration) {
         this.title = title;
         this.kilometres = kilometres;
         this.fromPlace = fromPlace;
         this.toPlace = toPlace;
-        this.date = date;
+        this.duration = duration;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public int getKilometres() {
+    public String getKilometres() {
         return kilometres;
     }
 
-    public void setKilometres(int kilometres) {
+    public void setKilometres(String kilometres) {
         this.kilometres = kilometres;
     }
 
@@ -55,11 +55,11 @@ public class Travel implements Serializable {
         this.toPlace = toPlace;
     }
 
-    public String getDate() {
-        return date;
+    public String getDuration() {
+        return duration;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setDuration(String duration) {
+        this.duration = duration;
     }
 }

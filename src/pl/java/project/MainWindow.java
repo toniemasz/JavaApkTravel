@@ -6,6 +6,8 @@ import java.awt.event.MouseEvent;
 import java.util.List;
 
 public class MainWindow {
+
+    DistanceMatrixAPIExample googleMaps = new DistanceMatrixAPIExample();
     TravelManage tManage = new TravelManage();
     JPanel panel1;
     private JButton newTravelButton;
@@ -67,12 +69,12 @@ public class MainWindow {
         // Użyj wyrażenia lambda dla ActionListenera przycisku newTravelButton
         newTravelButton.addActionListener(e -> {
             String title = JOptionPane.showInputDialog(null, "Wpisz Tytuł");
-            int km = 100; // Tutaj będzie funkcja, która oblicza kilometry z Api Google, ale to potem
             String fromPlace = JOptionPane.showInputDialog(null, "Wpisz skąd chcesz jechać");
             String toPlace = JOptionPane.showInputDialog(null, "Wpisz dokąd");
-            String date = JOptionPane.showInputDialog(null, "Wpisz datę");
+            String km = googleMaps.runExample(fromPlace,toPlace).getDistance();
+            String duration = googleMaps.runExample(fromPlace,toPlace).getDuration();
 
-            Travel travel = new Travel(title, km, fromPlace, toPlace, date);
+            Travel travel = new Travel(title, km, fromPlace, toPlace, duration);
             System.out.println(travel);
             tManage.addTravel(travel);
             JOptionPane.showMessageDialog(null, "NOWE");// test
@@ -93,11 +95,11 @@ public class MainWindow {
 
             if (selectedTravel != null) {
                 // Wyświetlamy szczegóły podróży
-                String detailsMessage = "Tytuł: " + selectedTravel.getTitle() + "\n"
+                String detailsMessage = selectedTravel.getTitle() + "\n"
                         + "Kilometry: " + selectedTravel.getKilometres() + "\n"
                         + "Skąd: " + selectedTravel.getFromPlace() + "\n"
                         + "Dokąd: " + selectedTravel.getToPlace() + "\n"
-                        + "Data: " + selectedTravel.getDate();
+                        + "Czas: " + selectedTravel.getDuration();
 
                 JOptionPane.showMessageDialog(null, detailsMessage, "Szczegóły podróży", JOptionPane.INFORMATION_MESSAGE);
             } else {

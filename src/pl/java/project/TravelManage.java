@@ -27,7 +27,7 @@ public class TravelManage {
 
     public static void displayTravelInformation(Travel travel) {
         String information = "Podróż z " + travel.getFromPlace() + " do " + travel.getToPlace() +
-                " na dystansie " + travel.getKilometres() + " km, planowana na " + travel.getDate();
+                " na dystansie " + travel.getKilometres() + " km, planowana na " + travel.getDuration();
         JOptionPane.showMessageDialog(null, information, "Informacje o podróży", JOptionPane.INFORMATION_MESSAGE);
     }
 

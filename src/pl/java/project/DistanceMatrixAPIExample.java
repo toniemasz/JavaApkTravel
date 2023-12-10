@@ -20,7 +20,7 @@ public class DistanceMatrixAPIExample {
     private static String getApiKey(){
         String apiKey = null;
         Properties prop = new Properties();
-        try (InputStream input = new FileInputStream("src/pl/java/project/config.properties")) {
+        try (InputStream input = new FileInputStream("src/config.properties")) {
             prop.load(input);
             apiKey = prop.getProperty("api.key");
         } catch (IOException ex) {
@@ -30,11 +30,33 @@ public class DistanceMatrixAPIExample {
         return apiKey;
     }
 
-    public static void runExample(String origin,String destination) {
+    public static class DistanceDurationResult {
+        private String distance;
+        private String duration;
+
+        public DistanceDurationResult(String distance, String duration) {
+            this.distance = distance;
+            this.duration = duration;
+        }
+
+        public String getDistance() {
+            return distance;
+        }
+
+        public String getDuration() {
+            return duration;
+        }
+    }
+
+    public static DistanceDurationResult runExample(String origin, String destination) {
+        String distance = null;
+        String duration = null;
         try {
             // Tworzymy URL na podstawie zapytania do API
             String apiKey = getApiKey();
 
+            distance = "";
+            duration = "";
 
             // Kodujemy adresy URL
             String encodedOrigin = URLEncoder.encode(origin, "UTF-8");
@@ -73,13 +95,14 @@ public class DistanceMatrixAPIExample {
             if ("OK".equals(status)) {
                 String originAddress = document.getElementsByTagName("origin_address").item(0).getTextContent();
                 String destinationAddress = document.getElementsByTagName("destination_address").item(0).getTextContent();
-                String durationText = document.getElementsByTagName("text").item(0).getTextContent();
-                String distanceText = document.getElementsByTagName("text").item(1).getTextContent();
+                distance = document.getElementsByTagName("text").item(1).getTextContent();
+                duration = document.getElementsByTagName("text").item(0).getTextContent();
+
 
                 System.out.println("Origin: " + originAddress);
                 System.out.println("Destination: " + destinationAddress);
-                System.out.println("Duration: " + durationText);
-                System.out.println("Distance: " + distanceText);
+                System.out.println("Duration: " + duration);
+                System.out.println("Distance: " + distance);
             } else {
                 System.out.println("Error: " + status);
             }
@@ -87,6 +110,7 @@ public class DistanceMatrixAPIExample {
         } catch (IOException | ParserConfigurationException | SAXException e) {
             e.printStackTrace();
         }
+        return new DistanceDurationResult(distance, duration);
     }
 
     public static void main(String[] args) {

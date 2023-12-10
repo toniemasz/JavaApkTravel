@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="runExample -&gt; API REQUEST">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/FilesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/FilesManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Travel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/travels.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +66,7 @@
       <recent name="C:\Users\tomas\OneDrive\Pulpit\PlanowaniePodrozyAPK\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DistanceMatrixAPIExample">
+  <component name="RunManager" selected="Application.Runner">
     <configuration name="DistanceMatrixAPIExample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DistanceMatrixAPIExample" />
       <module name="PlanowaniePodrozyAPK" />
@@ -109,10 +115,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Runner" />
         <item itemvalue="Application.DistanceMatrixAPIExample" />
         <item itemvalue="Application.DistanceMatrixAPIExample (1)" />
         <item itemvalue="Application.GoogleMapsAPI" />
-        <item itemvalue="Application.Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +137,9 @@
       <workItem from="1701908196866" duration="195000" />
       <workItem from="1701955337221" duration="2859000" />
       <workItem from="1702150343271" duration="4192000" />
-      <workItem from="1702157050826" duration="1437000" />
+      <workItem from="1702157050826" duration="2047000" />
+      <workItem from="1702162716656" duration="361000" />
+      <workItem from="1702169224662" duration="1060000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -224,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702158432510</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="runExample -&gt; API REQUEST">
+      <created>1702158530475</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702158530475</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
