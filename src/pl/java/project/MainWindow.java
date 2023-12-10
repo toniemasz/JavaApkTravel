@@ -44,7 +44,7 @@ public class MainWindow {
             List<Travel> loadedTravels = FilesManager.loadFromFile("travels.txt");
 
             if (loadedTravels != null) {
-                tManage.setTravelList(loadedTravels);
+                tManage.addToTravelListAll(loadedTravels);
                 list1.setModel(tManage.displayTravelList().getModel());
                 list1.setVisible(true);
                 JOptionPane.showMessageDialog(null, "Wczytano podróże z pliku.");

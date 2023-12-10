@@ -50,6 +50,16 @@ public class TravelManage {
         this.travelList = travelList;
     }
 
+    public void addToTravelList(Travel travel){
+        this.travelList.add(travel);
+    }
+
+    public void addToTravelListAll(List<Travel> travelList){
+        for (Travel t:travelList) {
+            addToTravelList(t);
+        }
+    }
+
 
 
 }

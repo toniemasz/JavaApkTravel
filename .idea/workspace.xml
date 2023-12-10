@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="runExample -&gt; API REQUEST">
+    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="API REQUEST wprowadzone w GUI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/FilesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/FilesManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Travel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/travels.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +135,7 @@
       <workItem from="1702150343271" duration="4192000" />
       <workItem from="1702157050826" duration="2047000" />
       <workItem from="1702162716656" duration="361000" />
-      <workItem from="1702169224662" duration="1060000" />
+      <workItem from="1702169224662" duration="1640000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -239,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702158530475</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="API REQUEST wprowadzone w GUI">
+      <created>1702170450955</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702170450955</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +266,8 @@
     <MESSAGE value="Naprawiony błąd z podwójnym actionListenerem w klasie MainWindow.java" />
     <MESSAGE value="Dodano funkcjonalność, wczytywania i zapisywania listy do pliku txt i wczytywania z niego" />
     <MESSAGE value="runExample -&gt; API REQUEST" />
-    <option name="LAST_COMMIT_MESSAGE" value="runExample -&gt; API REQUEST" />
+    <MESSAGE value="API REQUEST wprowadzone w GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="API REQUEST wprowadzone w GUI" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
