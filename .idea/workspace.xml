@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="poprawa błędy z nadpisywaniem przy wczytywaniu.">
+    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="usunieta metoda main z DistanceMatrixAPIExample.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/travels.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +134,8 @@
       <workItem from="1702157050826" duration="2047000" />
       <workItem from="1702162716656" duration="361000" />
       <workItem from="1702169224662" duration="1997000" />
-      <workItem from="1702171256644" duration="310000" />
+      <workItem from="1702171256644" duration="381000" />
+      <workItem from="1702575102535" duration="698000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -250,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702171009608</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="usunieta metoda main z DistanceMatrixAPIExample.java">
+      <created>1702171592831</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1702171592831</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +282,8 @@
     <MESSAGE value="runExample -&gt; API REQUEST" />
     <MESSAGE value="API REQUEST wprowadzone w GUI" />
     <MESSAGE value="poprawa błędy z nadpisywaniem przy wczytywaniu." />
-    <option name="LAST_COMMIT_MESSAGE" value="poprawa błędy z nadpisywaniem przy wczytywaniu." />
+    <MESSAGE value="usunieta metoda main z DistanceMatrixAPIExample.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="usunieta metoda main z DistanceMatrixAPIExample.java" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

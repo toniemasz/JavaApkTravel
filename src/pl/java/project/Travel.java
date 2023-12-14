@@ -2,7 +2,7 @@ package pl.java.project;
 
 import java.io.Serializable;
 
-public class Travel implements Serializable {
+public class Travel {
     @Override
     public String toString() {
         return "Travel{" +
