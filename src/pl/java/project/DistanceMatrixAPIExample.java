@@ -6,6 +6,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Properties;
 
+import javax.swing.*;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -105,10 +106,11 @@ public class DistanceMatrixAPIExample {
                 System.out.println("Distance: " + distance);
             } else {
                 System.out.println("Error: " + status);
+                JOptionPane.showMessageDialog(null,"Nie znaleziono trasy","Błąd",JOptionPane.ERROR_MESSAGE);
             }
 
         } catch (IOException | ParserConfigurationException | SAXException e) {
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null,"Nie znaleziono trasy","Błąd",JOptionPane.ERROR_MESSAGE);
         }
         return new DistanceDurationResult(distance, duration);
     }

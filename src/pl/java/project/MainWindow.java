@@ -69,6 +69,10 @@ public class MainWindow {
         // Użyj wyrażenia lambda dla ActionListenera przycisku newTravelButton
         newTravelButton.addActionListener(e -> {
             String title = JOptionPane.showInputDialog(null, "Wpisz Tytuł");
+            if (title == null || title.trim().isEmpty()) {
+                // Jeżeli tytuł jest pusty, przypisz domyślną wartość "Untitled"
+                title = "Untitled";
+            }
             String fromPlace = JOptionPane.showInputDialog(null, "Wpisz skąd chcesz jechać");
             String toPlace = JOptionPane.showInputDialog(null, "Wpisz dokąd");
             String km = googleMaps.runExample(fromPlace,toPlace).getDistance();
@@ -77,7 +81,7 @@ public class MainWindow {
             Travel travel = new Travel(title, km, fromPlace, toPlace, duration);
             System.out.println(travel);
             tManage.addTravel(travel);
-            JOptionPane.showMessageDialog(null, "NOWE");// test
+            JOptionPane.showMessageDialog(null, "Nowa trasa z " + fromPlace + " do " + toPlace + " została dodana poprawnie");// test
             System.out.println("Tytuły podróży: " + tManage.displayTravelList().getModel());
             list1.setModel(tManage.displayTravelList().getModel());
             list1.setVisible(true);
