@@ -73,6 +73,7 @@
           </grid>
         </constraints>
         <properties>
+          <font size="18"/>
           <model/>
           <toolTipText value=""/>
         </properties>

@@ -10,6 +10,15 @@ public class StartApp {
     private JFrame frame;
 
     public StartApp() {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                initializeGUI();
+            }
+        });
+    }
+
+    private void initializeGUI() {
         frame = new JFrame("Aplikacja do planowania podróży");
         frame.setContentPane(Panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
