@@ -1,8 +1,11 @@
 package pl.java.project;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.List;
 
 public class MainWindow {
@@ -114,14 +117,10 @@ public class MainWindow {
             Travel selectedTravel = findTravelByTitle(selectedTravelTitle, model);
 
             if (selectedTravel != null) {
-                // Wyświetlamy szczegóły podróży
-                String detailsMessage = selectedTravel.getTitle() + "\n"
-                        + "Kilometry: " + selectedTravel.getKilometres() + "\n"
-                        + "Skąd: " + selectedTravel.getFromPlace() + "\n"
-                        + "Dokąd: " + selectedTravel.getToPlace() + "\n"
-                        + "Czas: " + selectedTravel.getDuration();
+                ShowDetails dialog = new ShowDetails(selectedTravel, panel1);
+                dialog.pack();
+                dialog.setVisible(true);
 
-                JOptionPane.showMessageDialog(null, detailsMessage, "Szczegóły podróży", JOptionPane.INFORMATION_MESSAGE);
             } else {
                 JOptionPane.showMessageDialog(null, "Błąd: Nie znaleziono podróży o tytule: " + selectedTravelTitle, "Błąd", JOptionPane.ERROR_MESSAGE);
             }
@@ -158,11 +157,5 @@ public class MainWindow {
             JOptionPane.showMessageDialog(null, "Błąd: Zaznacz elementy do usunięcia", "Błąd", JOptionPane.ERROR_MESSAGE);
         }
     }
-
-
-
-
-
-
 }
 

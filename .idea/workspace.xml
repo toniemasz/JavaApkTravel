@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="drobna zmiana">
+    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="Przygotowanie pod edit i komentarze">
+      <change afterPath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Travel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +59,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.java.project" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tomas\OneDrive\Pulpit\PlanowaniePodrozyAPK\src" />
     </key>
@@ -86,19 +87,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoogleMapsAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.java.project.GoogleMapsAPI" />
-      <module name="PlanowaniePodrozyAPK" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.java.project.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.java.project.Runner" />
       <module name="PlanowaniePodrozyAPK" />
@@ -112,12 +100,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShowDetails" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.java.project.ShowDetails" />
+      <module name="PlanowaniePodrozyAPK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.java.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/tomas/OneDrive/Pulpit/PlanowaniePodrozyAPK/src/pl/java/project/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/src/pl/java/project/build.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Runner" />
+        <item itemvalue="Application.ShowDetails" />
+        <item itemvalue="Gradle.C:/Users/tomas/OneDrive/Pulpit/PlanowaniePodrozyAPK/src/pl/java/project/build.gradle" />
         <item itemvalue="Application.DistanceMatrixAPIExample" />
         <item itemvalue="Application.DistanceMatrixAPIExample (1)" />
-        <item itemvalue="Application.GoogleMapsAPI" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +163,8 @@
       <workItem from="1702171256644" duration="381000" />
       <workItem from="1702575102535" duration="1636000" />
       <workItem from="1703186635828" duration="4862000" />
-      <workItem from="1703245440160" duration="2458000" />
+      <workItem from="1703245440160" duration="2686000" />
+      <workItem from="1703272832682" duration="8280000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -284,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703188825457</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Przygotowanie pod edit i komentarze">
+      <created>1703249817482</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1703249817482</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +343,8 @@
     <MESSAGE value="coś usunąłem" />
     <MESSAGE value="wielowątkowość dodana w GUI - Event Dispatch Thread" />
     <MESSAGE value="drobna zmiana" />
-    <option name="LAST_COMMIT_MESSAGE" value="drobna zmiana" />
+    <MESSAGE value="Przygotowanie pod edit i komentarze" />
+    <option name="LAST_COMMIT_MESSAGE" value="Przygotowanie pod edit i komentarze" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
