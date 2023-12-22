@@ -24,7 +24,7 @@
               <text value="Nowa Trasa"/>
             </properties>
           </component>
-          <component id="50993" class="javax.swing.JButton" binding="seJebnijButton" default-binding="true">
+          <component id="50993" class="javax.swing.JButton" binding="editButton" default-binding="true">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>

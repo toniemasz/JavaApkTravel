@@ -11,7 +11,7 @@ public class MainWindow {
     TravelManage tManage = new TravelManage();
     JPanel panel1;
     private JButton newTravelButton;
-    private JButton seJebnijButton;
+    private JButton editButton;
     private JButton removeTravelButton;
     private JButton exitButton;
     private JButton saveButton;
@@ -25,8 +25,8 @@ public class MainWindow {
             removeFromList();
         });
 
-        seJebnijButton.addActionListener(e -> { //Jakiś przycisk ale wsm nie wiem co będzie robił taki zapasowy w razie czego to do kosza go
-            JOptionPane.showInternalMessageDialog(null, "XD tak nudziło mi się ");
+        editButton.addActionListener(e -> { //przycisk do edycji
+            editFromList();
         });
 
         exitButton.addActionListener(e -> {
@@ -66,7 +66,6 @@ public class MainWindow {
             }
         });
 
-        // Użyj wyrażenia lambda dla ActionListenera przycisku newTravelButton
         newTravelButton.addActionListener(e -> {
             String title = JOptionPane.showInputDialog(null, "Wpisz Tytuł");
             if (title == null || title.trim().isEmpty()) {
@@ -86,6 +85,23 @@ public class MainWindow {
             list1.setModel(tManage.displayTravelList().getModel());
             list1.setVisible(true);
         });
+    }
+
+    private void editFromList() {
+        int selectedIndex = list1.getSelectedIndex();
+
+        if (selectedIndex >= 0 && selectedIndex < tManage.getTravelList().size()) {
+            //tutaj do edycji funkcja z TravelManage
+            // coś podobnego do remove. Najlepiej jakby odtwierać okno i wszystko na raz można edytować. w sensie aby tytuł i formPlace i toPlace wyświetlało się pod sobą w jednym oknie.
+            //             tManage.removeTravel(selectedIndex);
+            //
+            //
+            //            list1.setModel(tManage.displayTravelList().getModel());
+            //            list1.setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(null, "Błąd: Zaznacz elementy do usunięcia", "Błąd", JOptionPane.ERROR_MESSAGE);
+        }
+
     }
 
     private void showDetailsDialog(int selectedIndex) {

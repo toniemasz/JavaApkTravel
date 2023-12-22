@@ -106,11 +106,13 @@ public class DistanceMatrixAPIExample {
                 System.out.println("Distance: " + distance);
             } else {
                 System.out.println("Error: " + status);
-                JOptionPane.showMessageDialog(null,"Nie znaleziono trasy","Błąd",JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null,"brak połączenia z API wpisz api_key w odpowiedni plik","Błąd",JOptionPane.ERROR_MESSAGE);
+                return null;
             }
 
         } catch (IOException | ParserConfigurationException | SAXException e) {
             JOptionPane.showMessageDialog(null,"Nie znaleziono trasy","Błąd",JOptionPane.ERROR_MESSAGE);
+
         }
         return new DistanceDurationResult(distance, duration);
     }

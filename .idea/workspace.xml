@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="wielowątkowość dodana w GUI - Event Dispatch Thread">
+    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="drobna zmiana">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/GoogleApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/GoogleMapsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Travel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +141,8 @@
       <workItem from="1702169224662" duration="1997000" />
       <workItem from="1702171256644" duration="381000" />
       <workItem from="1702575102535" duration="1636000" />
-      <workItem from="1703186635828" duration="2139000" />
+      <workItem from="1703186635828" duration="4862000" />
+      <workItem from="1703245440160" duration="2458000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -275,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703186983763</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="drobna zmiana">
+      <created>1703188825457</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1703188825457</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +313,8 @@
     <MESSAGE value="usunieta metoda main z DistanceMatrixAPIExample.java" />
     <MESSAGE value="coś usunąłem" />
     <MESSAGE value="wielowątkowość dodana w GUI - Event Dispatch Thread" />
-    <option name="LAST_COMMIT_MESSAGE" value="wielowątkowość dodana w GUI - Event Dispatch Thread" />
+    <MESSAGE value="drobna zmiana" />
+    <option name="LAST_COMMIT_MESSAGE" value="drobna zmiana" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
