@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="Ikony do szczegółów i trochę przerobienie wyświetlania szczegółów">
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/images/distance.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/images/duraction.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/images/placeholder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/images/racing-flag.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Travel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/travels.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MapPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/images/distance.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/distance.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/images/duraction.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/duraction.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/images/placeholder.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/placeholder.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/images/racing-flag.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/racing-flag.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +36,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -362,6 +358,16 @@
     <MESSAGE value="drobna zmiana" />
     <MESSAGE value="Przygotowanie pod edit i komentarze" />
     <option name="LAST_COMMIT_MESSAGE" value="Przygotowanie pod edit i komentarze" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

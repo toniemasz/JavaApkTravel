@@ -49,7 +49,7 @@
             </constraints>
             <properties>
               <font size="16"/>
-              <icon value="pl/java/project/images/distance.png"/>
+              <icon value="images/distance.png"/>
               <text value="Label"/>
             </properties>
           </component>
@@ -59,7 +59,7 @@
             </constraints>
             <properties>
               <font size="16"/>
-              <icon value="pl/java/project/images/racing-flag.png"/>
+              <icon value="images/racing-flag.png"/>
               <text value="Label"/>
             </properties>
           </component>
@@ -68,10 +68,9 @@
               <grid row="4" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <disabledIcon value="pl/java/project/images/duraction.png"/>
               <font size="16"/>
               <horizontalTextPosition value="4"/>
-              <icon value="pl/java/project/images/duraction.png"/>
+              <icon value="images/duraction.png"/>
               <iconTextGap value="5"/>
               <inheritsPopupMenu value="false"/>
               <requestFocusEnabled value="true"/>
@@ -86,7 +85,7 @@
             </constraints>
             <properties>
               <font size="16"/>
-              <icon value="pl/java/project/images/placeholder.png"/>
+              <icon value="images/placeholder.png"/>
               <text value="Label"/>
             </properties>
           </component>
