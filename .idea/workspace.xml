@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="Ikony do szczegółów i trochę przerobienie wyświetlania szczegółów">
+    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="poprawka">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MapPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/images/distance.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/distance.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/images/duraction.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/duraction.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/images/placeholder.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/placeholder.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/images/racing-flag.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/racing-flag.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/GoogleMapsLinkGeneratorApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/GoogleMapsLinkGeneratorApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/travels.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703249817482</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="poprawka">
+      <created>1705187648879</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1705187648879</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +366,8 @@
     <MESSAGE value="wielowątkowość dodana w GUI - Event Dispatch Thread" />
     <MESSAGE value="drobna zmiana" />
     <MESSAGE value="Przygotowanie pod edit i komentarze" />
-    <option name="LAST_COMMIT_MESSAGE" value="Przygotowanie pod edit i komentarze" />
+    <MESSAGE value="poprawka" />
+    <option name="LAST_COMMIT_MESSAGE" value="poprawka" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

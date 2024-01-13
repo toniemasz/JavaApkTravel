@@ -3,7 +3,9 @@ package pl.java.project;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.net.URL;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class ShowDetails extends JDialog {
     public JPanel contentPane;
@@ -13,6 +15,7 @@ public class ShowDetails extends JDialog {
     private JLabel fromPlaceLabel;
     private JLabel toPlaceLabel;
     private JLabel durationLabel;
+    private JButton linkDoTrasyButton;
 
     private Travel selectedTravel;
     private int selectedIndex;
@@ -71,6 +74,27 @@ public class ShowDetails extends JDialog {
         toPlaceLabel.setText("Dokąd: " + selectedTravel.getToPlace());
         durationLabel.setText("Czas: " + selectedTravel.getDuration());
 
+
+        linkDoTrasyButton.addActionListener(e -> {
+            GoogleMapsLinkGeneratorApp link = new GoogleMapsLinkGeneratorApp(selectedTravel.getFromPlace(),selectedTravel.getToPlace());
+            link.getLink();
+            Desktop desktop = Desktop.getDesktop();
+
+            // Adres URL do otwarcia
+            String link2 = link.getLink();
+
+            URI uri = null;
+            try {
+                uri = new URI(link2);
+            } catch (URISyntaxException ex) {
+                throw new RuntimeException(ex);
+            }
+            try {
+                desktop.browse(uri);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 dispose();

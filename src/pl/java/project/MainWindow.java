@@ -25,6 +25,7 @@ public class MainWindow {
     public MainWindow() {
 
 
+
         removeTravelButton.addActionListener(e -> {
             removeFromList();
         });
@@ -202,6 +203,7 @@ public class MainWindow {
         list1.setModel(tManage.displayTravelList().getModel());
         list1.setVisible(true);
     }
+
 
 }
 
