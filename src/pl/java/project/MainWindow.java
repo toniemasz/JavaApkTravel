@@ -20,6 +20,7 @@ public class MainWindow {
     private JButton saveButton;
     private JButton readButton;
     private JList<String> list1;
+    private ShowDetails detailsDialog;
 
     public MainWindow() {
 
@@ -51,6 +52,8 @@ public class MainWindow {
                 list1.setModel(tManage.displayTravelList().getModel());
                 list1.setVisible(true);
                 JOptionPane.showMessageDialog(null, "Wczytano podróże z pliku.");
+
+
             } else {
                 JOptionPane.showMessageDialog(null, "Błąd podczas wczytywania z pliku.", "Błąd", JOptionPane.ERROR_MESSAGE);
             }
@@ -77,16 +80,16 @@ public class MainWindow {
             }
             String fromPlace = JOptionPane.showInputDialog(null, "Wpisz skąd chcesz jechać");
             String toPlace = JOptionPane.showInputDialog(null, "Wpisz dokąd");
-            String km = googleMaps.runExample(fromPlace,toPlace).getDistance();
-            String duration = googleMaps.runExample(fromPlace,toPlace).getDuration();
+            DistanceMatrixAPIExample.DistanceDurationResult apiResult = googleMaps.runExample(fromPlace, toPlace);
+            String km = apiResult.getDistance();
+            String duration = apiResult.getDuration();
 
             Travel travel = new Travel(title, km, fromPlace, toPlace, duration);
             System.out.println(travel);
             tManage.addTravel(travel);
             JOptionPane.showMessageDialog(null, "Nowa trasa z " + fromPlace + " do " + toPlace + " została dodana poprawnie");// test
             System.out.println("Tytuły podróży: " + tManage.displayTravelList().getModel());
-            list1.setModel(tManage.displayTravelList().getModel());
-            list1.setVisible(true);
+           updateList();
         });
     }
 
@@ -94,18 +97,60 @@ public class MainWindow {
         int selectedIndex = list1.getSelectedIndex();
 
         if (selectedIndex >= 0 && selectedIndex < tManage.getTravelList().size()) {
-            //tutaj do edycji funkcja z TravelManage
-            // coś podobnego do remove. Najlepiej jakby odtwierać okno i wszystko na raz można edytować. w sensie aby tytuł i formPlace i toPlace wyświetlało się pod sobą w jednym oknie.
-            //             tManage.removeTravel(selectedIndex);
-            //
-            //
-            //            list1.setModel(tManage.displayTravelList().getModel());
-            //            list1.setVisible(true);
-        } else {
-            JOptionPane.showMessageDialog(null, "Błąd: Zaznacz elementy do usunięcia", "Błąd", JOptionPane.ERROR_MESSAGE);
-        }
+            Travel selectedTravel = tManage.getTravelList().get(selectedIndex);
 
+            // Zapisz pierwotne wartości FromPlace i ToPlace
+            String originalFromPlace = selectedTravel.getFromPlace();
+            String originalToPlace = selectedTravel.getToPlace();
+
+            // Utwórz okno dialogowe z polami do edycji
+            JPanel editPanel = new JPanel(new GridLayout(4, 2));
+            JTextField titleField = new JTextField(selectedTravel.getTitle());
+            JTextField fromPlaceField = new JTextField(originalFromPlace);
+            JTextField toPlaceField = new JTextField(originalToPlace);
+
+            editPanel.add(new JLabel("Title:"));
+            editPanel.add(titleField);
+            editPanel.add(new JLabel("From Place:"));
+            editPanel.add(fromPlaceField);
+            editPanel.add(new JLabel("To Place:"));
+            editPanel.add(toPlaceField);
+
+            int result = JOptionPane.showConfirmDialog(null, editPanel, "Edytuj podróż",
+                    JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
+
+            if (result == JOptionPane.OK_OPTION) {
+                // Pobieramy nowe wartości z pól edycji
+                String newFromPlace = fromPlaceField.getText();
+                String newToPlace = toPlaceField.getText();
+                String newTitle = titleField.getText();
+
+                // Sprawdź, czy wartości FromPlace lub ToPlace zostały zmienione
+                if (!originalFromPlace.equals(newFromPlace) || !originalToPlace.equals(newToPlace)) {
+                    // Jeśli zmieniono, pobierz nowe dane z API
+                    DistanceMatrixAPIExample.DistanceDurationResult apiResult = googleMaps.runExample(newFromPlace, newToPlace);
+                    String km = apiResult.getDistance();
+                    String duration = apiResult.getDuration();
+
+                    // Wywołujemy metodę edycji w obiekcie TravelManage
+                    tManage.editTravel(selectedIndex, newFromPlace, newToPlace, duration, km, newTitle);
+                    updateList();
+                    JOptionPane.showMessageDialog(null, "Podróż edytowana pomyślnie");
+                } else {
+                    // Jeśli nie zmieniono, wykonaj standardową edycję bez dodatkowych kroków
+                    tManage.editTravel(selectedIndex, newFromPlace, newToPlace, selectedTravel.getDuration(), selectedTravel.getKilometres(), newTitle);
+                    updateList();
+                    JOptionPane.showMessageDialog(null, "Podróż edytowana pomyślnie");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Błąd: Zaznacz podróż do edycji", "Błąd", JOptionPane.ERROR_MESSAGE);
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Błąd: Zaznacz podróż do edycji", "Błąd", JOptionPane.ERROR_MESSAGE);
+        }
     }
+
+
 
     private void showDetailsDialog(int selectedIndex) {
         ListModel<String> model = list1.getModel();
@@ -116,14 +161,11 @@ public class MainWindow {
             // Pobieramy obiekt Travel na podstawie tytułu
             Travel selectedTravel = findTravelByTitle(selectedTravelTitle, model);
 
-            if (selectedTravel != null) {
-                ShowDetails dialog = new ShowDetails(selectedTravel, panel1);
-                dialog.pack();
-                dialog.setVisible(true);
+                detailsDialog = new ShowDetails(selectedTravel, panel1,tManage);
+                detailsDialog.pack();
+                detailsDialog.setVisible(true);
 
-            } else {
-                JOptionPane.showMessageDialog(null, "Błąd: Nie znaleziono podróży o tytule: " + selectedTravelTitle, "Błąd", JOptionPane.ERROR_MESSAGE);
-            }
+
         } else {
             JOptionPane.showMessageDialog(null, "Błąd: Nieprawidłowy indeks elementu", "Błąd", JOptionPane.ERROR_MESSAGE);
         }
@@ -150,12 +192,17 @@ public class MainWindow {
             tManage.removeTravel(selectedIndex);
 
             // Aktualizujemy wyświetlanie listy
-            list1.setModel(tManage.displayTravelList().getModel());
-            list1.setVisible(true);
+            updateList();
             JOptionPane.showMessageDialog(null, "Usunięto podróż");
         } else {
             JOptionPane.showMessageDialog(null, "Błąd: Zaznacz elementy do usunięcia", "Błąd", JOptionPane.ERROR_MESSAGE);
         }
     }
+    private void updateList() {
+        list1.setModel(tManage.displayTravelList().getModel());
+        list1.setVisible(true);
+    }
+
 }
+
 

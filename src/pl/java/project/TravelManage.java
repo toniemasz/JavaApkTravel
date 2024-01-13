@@ -16,12 +16,18 @@ public class TravelManage {
         travelList.remove(travel);
     }
 
-    public void editTravel(int travel){
-        //tu trzeba stworzyć logikę aby wybrany indeks z listy travelList brało i potem pobierało dane z niego i jeżeli się zmienią to musi
-        // dać requesta runExample(String origin, String destination). a jeżeli się nie zmieni to tego nie robi aby nie robić zbędnych requestów a tam jeszcze musisz sprawdzić
-        // jak to robię bo robię to na obiekcie patrz MainWindow.java newTravelButton.addActionListener(e -> { .....} i tak samo trzeba to zrobić tylko z ifem aby
-        // nie robiło requesta jak nic nie zmienię albo jak zmienię tylko tytuł bez fromPlace albo toPlace
-        // Używaj z klasy Travel metod set
+    public void editTravel(int number,String fromPlace, String toPlace, String duraction, String km, String title){
+        if (number >= 0 && number < travelList.size()) {
+            Travel travel = travelList.get(number);
+            travel.setFromPlace(fromPlace);
+            travel.setToPlace(toPlace);
+            travel.setDuration(duraction);
+            travel.setKilometres(km);
+            travel.setTitle(title);
+        } else {
+            // Obsługa błędu indeksu podróży
+            JOptionPane.showMessageDialog(null, "Podróż o podanym numerze nie istnieje", "Błąd", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     public JList displayTravelList(){ //do wyświetlenia listy w GUI

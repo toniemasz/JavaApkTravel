@@ -63,4 +63,7 @@ public class Travel {
         this.duration = duration;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }

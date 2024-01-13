@@ -1,3 +1,2 @@
-lklkklk,115 km,kakolewo,kluczewo,1 hour 27 mins
+Tomasz,183 km,Poznań,Wrocław,2 hours 5 mins
 Wrocław,181 km,Wrocław,poznan,2 hours 5 mins
-1,1,830 km,Berlin,Moskwa,19 hours 40 mins

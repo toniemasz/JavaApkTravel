@@ -15,6 +15,8 @@ public class ShowDetails extends JDialog {
     private JLabel durationLabel;
 
     private Travel selectedTravel;
+    private int selectedIndex;
+    private TravelManage tManage;
 
     public void transformIcons() {
         transformLabelIcon(kilometersLabel);
@@ -47,8 +49,9 @@ public class ShowDetails extends JDialog {
         }
     }
 
-    public ShowDetails(Travel selectedTravel, JPanel mainWindow) {
+    public ShowDetails(Travel selectedTravel, JPanel mainWindow, TravelManage tManage) {
         this.selectedTravel = selectedTravel;
+        this.tManage = tManage;
         transformIcons();
         setContentPane(contentPane);
         setModal(true);
@@ -70,7 +73,7 @@ public class ShowDetails extends JDialog {
 
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                onOK();
+                dispose();
             }
         });
 
