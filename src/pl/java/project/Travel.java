@@ -67,13 +67,18 @@ public class Travel {
 
     public String fuelCost(double fuelConsumption, double fuelCost){
         double totalFuelCost = fuelConsumption * fuelCost;
-        //totalFuelCost = Math.round(totalFuelCost);
+        totalFuelCost = roundToTwoDecimalPlaces(totalFuelCost);
         return String.valueOf(totalFuelCost);
+    }
+
+    private double roundToTwoDecimalPlaces(double value) {
+        // Mnożymy przez 100, zaokrąglamy, a potem dzielimy przez 100
+        return Math.round(value * 100.0) / 100.0;
     }
 
     public double fuelConsumption(double fuelConsumptionPer100km){
         double totalFuelConsumption = (kilometres)/100 * fuelConsumptionPer100km;
-        totalFuelConsumption = Math.round(totalFuelConsumption);
+        totalFuelConsumption = roundToTwoDecimalPlaces(totalFuelConsumption);
         return totalFuelConsumption;
     }
 }

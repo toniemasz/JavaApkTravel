@@ -129,10 +129,11 @@ public class DistanceMatrixAPIExample {
         String cleanedText = text.replaceAll("[^\\d.]", "");
 
         // W przypadku, gdy mamy kropkę, oznaczającą dziesiętne miejsce, pozostawiamy tylko jedną
-        if (cleanedText.contains(".")) {
+        if (cleanedText.contains(",")) {
             String[] parts = cleanedText.split("\\.");
             if (parts.length > 1) {
-                cleanedText = parts[0] + "." + parts[1];
+                cleanedText = parts[0] + " " + parts[1];
+                System.out.println(cleanedText);
             }
         }
 

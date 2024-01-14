@@ -1,4 +1,2 @@
-Tomasz,183,Poznań,Wrocław,2 hours 5 mins
-Wrocław,181,Wrocław,poznan,2 hours 5 mins
-Tomasz,183,Poznań,Wrocław,2 hours 5 mins
-Wrocław,181,Wrocław,poznan,2 hours 5 mins
+Trasa1,374.0,Kluczewo 64-234,Warszawa,3 hours 51 mins
+Trasa2,536.0,Kraków,Praga,5 hours 34 mins
