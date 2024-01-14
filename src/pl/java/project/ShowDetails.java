@@ -3,6 +3,9 @@ package pl.java.project;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -28,6 +31,8 @@ public class ShowDetails extends JDialog {
         transformLabelIcon(fromPlaceLabel);
         transformLabelIcon(toPlaceLabel);
         transformLabelIcon(durationLabel);
+        transformLabelIcon(fuelConsumption);
+        transformLabelIcon(fuelCost);
     }
 
     private void transformLabelIcon(JLabel label) {
@@ -54,7 +59,13 @@ public class ShowDetails extends JDialog {
         }
     }
 
-    public ShowDetails(Travel selectedTravel, JPanel mainWindow, TravelManage tManage) {
+    public ShowDetails(Travel selectedTravel, JPanel mainWindow, TravelManage tManage) throws IOException {
+
+        BufferedReader reader = new BufferedReader(new FileReader("fuel.txt"));
+        double firstValue = Double.parseDouble(reader.readLine());// fuelConsumtion
+        // Wczytaj drugą wartość
+        double secondValue = Double.parseDouble(reader.readLine());// fuelCost
+
         this.selectedTravel = selectedTravel;
         this.tManage = tManage;
         transformIcons();
@@ -75,9 +86,10 @@ public class ShowDetails extends JDialog {
         fromPlaceLabel.setText("Skąd: " + selectedTravel.getFromPlace());
         toPlaceLabel.setText("Dokąd: " + selectedTravel.getToPlace());
         durationLabel.setText("Czas: " + selectedTravel.getDuration());
-        fuelConsumption.setText("Paliwo: " + selectedTravel.fuelConsumption(5.7)+ "litry");
-        fuelCost.setText("Koszt: " + selectedTravel.fuelCost("5.7",7.9));
+        fuelConsumption.setText("Paliwo: " + selectedTravel.fuelConsumption(firstValue) + " litry");
+        fuelCost.setText("Koszt: " + selectedTravel.fuelCost(String.valueOf(firstValue), secondValue));
 
+        reader.close();
 
         linkDoTrasyButton.addActionListener(e -> {
             GoogleMapsLinkGeneratorApp link = new GoogleMapsLinkGeneratorApp(selectedTravel.getFromPlace(),selectedTravel.getToPlace());

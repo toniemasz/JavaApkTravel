@@ -4,8 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+import java.io.IOException;
 import java.util.List;
 
 public class MainWindow {
@@ -20,6 +19,7 @@ public class MainWindow {
     private JButton saveButton;
     private JButton readButton;
     private JList<String> list1;
+    private JButton settingsButton;
     private ShowDetails detailsDialog;
 
     public MainWindow() {
@@ -67,10 +67,21 @@ public class MainWindow {
                 if (e.getClickCount() == 2) {
                     int selectedIndex = list1.getSelectedIndex();
                     if (selectedIndex != -1) {
-                        showDetailsDialog(selectedIndex);
+                        try {
+                            showDetailsDialog(selectedIndex);
+                        } catch (IOException ex) {
+                            throw new RuntimeException(ex);
+                        }
                     }
                 }
             }
+        });
+
+        settingsButton.addActionListener(e -> {
+            SwingUtilities.invokeLater(() -> {
+                SettingsDialog dialog = new SettingsDialog();
+                dialog.setVisible(true);
+            });
         });
 
         newTravelButton.addActionListener(e -> {
@@ -153,7 +164,7 @@ public class MainWindow {
 
 
 
-    private void showDetailsDialog(int selectedIndex) {
+    private void showDetailsDialog(int selectedIndex) throws IOException {
         ListModel<String> model = list1.getModel();
 
         if (selectedIndex >= 0 && selectedIndex < model.getSize()) {

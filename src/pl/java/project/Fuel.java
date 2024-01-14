@@ -1,10 +1,10 @@
 package pl.java.project;
 
-public class FuelSettings {
+public class Fuel {
     double fuelConsumption;
     double fuelPrice;
 
-    public FuelSettings(double fuelConsumption, double fuelPrice) {
+    public Fuel(double fuelConsumption, double fuelPrice) {
         this.fuelConsumption = fuelConsumption;
         this.fuelPrice = fuelPrice;
     }

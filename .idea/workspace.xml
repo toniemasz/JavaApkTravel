@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="poprawka">
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/FuelSettings.java" afterDir="false" />
+    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="PALIWO">
+      <change afterPath="$PROJECT_DIR$/fuel.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/cash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/fuel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/java/project/SettingsDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/FilesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/FilesManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/FuelSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Fuel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Travel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/travels.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,30 +57,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Debugger_Data_Views_Java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/tomas/OneDrive/Pulpit/PlanowaniePodrozyAPK/src/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Debugger_Data_Views_Java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.java.project" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tomas\OneDrive\Pulpit\PlanowaniePodrozyAPK\src\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tomas\OneDrive\Pulpit\PlanowaniePodrozyAPK" />
       <recent name="C:\Users\tomas\OneDrive\Pulpit\PlanowaniePodrozyAPK\src" />
     </key>
   </component>
@@ -183,7 +189,7 @@
       <workItem from="1703245440160" duration="2686000" />
       <workItem from="1703272832682" duration="8280000" />
       <workItem from="1705238465460" duration="1571000" />
-      <workItem from="1705240064986" duration="3845000" />
+      <workItem from="1705240064986" duration="7987000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -346,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705189523294</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="PALIWO">
+      <created>1705244227811</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1705244227811</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +403,8 @@
     <MESSAGE value="drobna zmiana" />
     <MESSAGE value="Przygotowanie pod edit i komentarze" />
     <MESSAGE value="poprawka" />
-    <option name="LAST_COMMIT_MESSAGE" value="poprawka" />
+    <MESSAGE value="PALIWO" />
+    <option name="LAST_COMMIT_MESSAGE" value="PALIWO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

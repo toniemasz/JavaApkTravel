@@ -67,11 +67,13 @@ public class Travel {
 
     public String fuelCost(String fuelConsumption, double fuelCost){
         double totalFuelCost = Double.parseDouble(fuelConsumption) * fuelCost;
+        totalFuelCost = Math.round(totalFuelCost);
         return String.valueOf(totalFuelCost);
     }
 
     public String fuelConsumption(double fuelConsumptionPer100km){
         double totalFuelConsumption = kilometres/100 * fuelConsumptionPer100km;
+        totalFuelConsumption = Math.round(totalFuelConsumption);
         return String.valueOf(totalFuelConsumption);
     }
 }
