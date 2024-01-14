@@ -29,7 +29,7 @@ public class FilesManager {
                 String[] parts = line.split(",");
                 if (parts.length == 5) {
                     String title = parts[0].trim();
-                    String kilometres = parts[1].trim();
+                    double kilometres = Double.parseDouble(parts[1].trim());
                     String fromPlace = parts[2].trim();
                     String toPlace = parts[3].trim();
                     String date = parts[4].trim();

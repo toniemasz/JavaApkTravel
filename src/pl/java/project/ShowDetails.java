@@ -16,6 +16,8 @@ public class ShowDetails extends JDialog {
     private JLabel toPlaceLabel;
     private JLabel durationLabel;
     private JButton linkDoTrasyButton;
+    private JLabel fuelConsumption;
+    private JLabel fuelCost;
 
     private Travel selectedTravel;
     private int selectedIndex;
@@ -73,6 +75,8 @@ public class ShowDetails extends JDialog {
         fromPlaceLabel.setText("Skąd: " + selectedTravel.getFromPlace());
         toPlaceLabel.setText("Dokąd: " + selectedTravel.getToPlace());
         durationLabel.setText("Czas: " + selectedTravel.getDuration());
+        fuelConsumption.setText("Paliwo: " + selectedTravel.fuelConsumption(5.7)+ "litry");
+        fuelCost.setText("Koszt: " + selectedTravel.fuelCost("5.7",7.9));
 
 
         linkDoTrasyButton.addActionListener(e -> {

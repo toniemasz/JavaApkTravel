@@ -16,7 +16,7 @@ public class TravelManage {
         travelList.remove(travel);
     }
 
-    public void editTravel(int number,String fromPlace, String toPlace, String duraction, String km, String title){
+    public void editTravel(int number, String fromPlace, String toPlace, String duraction, double km, String title){
         if (number >= 0 && number < travelList.size()) {
             Travel travel = travelList.get(number);
             travel.setFromPlace(fromPlace);

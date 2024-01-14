@@ -1,4 +1,4 @@
-Tomasz,183 km,Poznań,Wrocław,2 hours 5 mins
-Wrocław,181 km,Wrocław,poznan,2 hours 5 mins
-Tomasz,183 km,Poznań,Wrocław,2 hours 5 mins
-Wrocław,181 km,Wrocław,poznan,2 hours 5 mins
+Tomasz,183,Poznań,Wrocław,2 hours 5 mins
+Wrocław,181,Wrocław,poznan,2 hours 5 mins
+Tomasz,183,Poznań,Wrocław,2 hours 5 mins
+Wrocław,181,Wrocław,poznan,2 hours 5 mins

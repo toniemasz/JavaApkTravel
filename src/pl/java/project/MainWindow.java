@@ -82,7 +82,7 @@ public class MainWindow {
             String fromPlace = JOptionPane.showInputDialog(null, "Wpisz skąd chcesz jechać");
             String toPlace = JOptionPane.showInputDialog(null, "Wpisz dokąd");
             DistanceMatrixAPIExample.DistanceDurationResult apiResult = googleMaps.runExample(fromPlace, toPlace);
-            String km = apiResult.getDistance();
+            double km = apiResult.getDistance();
             String duration = apiResult.getDuration();
 
             Travel travel = new Travel(title, km, fromPlace, toPlace, duration);
@@ -130,7 +130,7 @@ public class MainWindow {
                 if (!originalFromPlace.equals(newFromPlace) || !originalToPlace.equals(newToPlace)) {
                     // Jeśli zmieniono, pobierz nowe dane z API
                     DistanceMatrixAPIExample.DistanceDurationResult apiResult = googleMaps.runExample(newFromPlace, newToPlace);
-                    String km = apiResult.getDistance();
+                    double km = apiResult.getDistance();
                     String duration = apiResult.getDuration();
 
                     // Wywołujemy metodę edycji w obiekcie TravelManage

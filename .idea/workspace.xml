@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="poprawka">
+      <change afterPath="$PROJECT_DIR$/src/pl/java/project/FuelSettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/GoogleMapsLinkGeneratorApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/GoogleMapsLinkGeneratorApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/FilesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/FilesManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Travel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/TravelManage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/travels.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,6 +182,8 @@
       <workItem from="1703186635828" duration="4862000" />
       <workItem from="1703245440160" duration="2686000" />
       <workItem from="1703272832682" duration="8280000" />
+      <workItem from="1705238465460" duration="1571000" />
+      <workItem from="1705240064986" duration="3845000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -335,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705187648879</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="poprawka">
+      <created>1705189523294</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1705189523294</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +357,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

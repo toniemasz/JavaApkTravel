@@ -1,7 +1,5 @@
 package pl.java.project;
 
-import java.io.Serializable;
-
 public class Travel {
     @Override
     public String toString() {
@@ -15,11 +13,11 @@ public class Travel {
     }
 
     String title;
-    String kilometres;
+    double kilometres;
     String fromPlace;
     String toPlace;
     String duration;
-    public Travel(String title, String kilometres, String fromPlace, String toPlace, String duration) {
+    public Travel(String title, double kilometres, String fromPlace, String toPlace, String duration) {
         this.title = title;
         this.kilometres = kilometres;
         this.fromPlace = fromPlace;
@@ -31,11 +29,11 @@ public class Travel {
         return title;
     }
 
-    public String getKilometres() {
+    public double getKilometres() {
         return kilometres;
     }
 
-    public void setKilometres(String kilometres) {
+    public void setKilometres(double kilometres) {
         this.kilometres = kilometres;
     }
 
@@ -65,5 +63,15 @@ public class Travel {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String fuelCost(String fuelConsumption, double fuelCost){
+        double totalFuelCost = Double.parseDouble(fuelConsumption) * fuelCost;
+        return String.valueOf(totalFuelCost);
+    }
+
+    public String fuelConsumption(double fuelConsumptionPer100km){
+        double totalFuelConsumption = kilometres/100 * fuelConsumptionPer100km;
+        return String.valueOf(totalFuelConsumption);
     }
 }

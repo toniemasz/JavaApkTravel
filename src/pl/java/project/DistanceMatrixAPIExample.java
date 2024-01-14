@@ -16,6 +16,8 @@ import org.xml.sax.SAXException;
 
 public class DistanceMatrixAPIExample {
 
+
+
     String ApiKey;
 
     private static String getApiKey() {
@@ -32,15 +34,15 @@ public class DistanceMatrixAPIExample {
     }
 
     public static class DistanceDurationResult {
-        private String distance;
+        private double distance;
         private String duration;
 
-        public DistanceDurationResult(String distance, String duration) {
+        public DistanceDurationResult(double distance, String duration) {
             this.distance = distance;
             this.duration = duration;
         }
 
-        public String getDistance() {
+        public double getDistance() {
             return distance;
         }
 
@@ -50,13 +52,14 @@ public class DistanceMatrixAPIExample {
     }
 
     public static DistanceDurationResult runExample(String origin, String destination) {
-        String distance = null;
+        double distance = 0;
+        String distanceText = null;
         String duration = null;
         try {
             // Tworzymy URL na podstawie zapytania do API
             String apiKey = getApiKey();
 
-            distance = "";
+            distanceText = "";
             duration = "";
 
             // Kodujemy adresy URL
@@ -96,14 +99,18 @@ public class DistanceMatrixAPIExample {
             if ("OK".equals(status)) {
                 String originAddress = document.getElementsByTagName("origin_address").item(0).getTextContent();
                 String destinationAddress = document.getElementsByTagName("destination_address").item(0).getTextContent();
-                distance = document.getElementsByTagName("text").item(1).getTextContent();
+                distanceText = document.getElementsByTagName("text").item(1).getTextContent();
                 duration = document.getElementsByTagName("text").item(0).getTextContent();
+                System.out.println(duration);
+                System.out.println(distanceText);
+                distanceText = extractNumber(distanceText);
+                distance = Double.parseDouble(distanceText);
 
 
                 System.out.println("Origin: " + originAddress);
                 System.out.println("Destination: " + destinationAddress);
                 System.out.println("Duration: " + duration);
-                System.out.println("Distance: " + distance);
+                System.out.println("Distance: " + distanceText);
             } else {
                 System.out.println("Error: " + status);
                 JOptionPane.showMessageDialog(null,"brak połączenia z API wpisz api_key w odpowiedni plik","Błąd",JOptionPane.ERROR_MESSAGE);
@@ -115,5 +122,20 @@ public class DistanceMatrixAPIExample {
 
         }
         return new DistanceDurationResult(distance, duration);
+    }
+
+    private static String extractNumber(String text) {
+        // Usunięcie niechcianych znaków (poza cyframi i kropką)
+        String cleanedText = text.replaceAll("[^\\d.]", "");
+
+        // W przypadku, gdy mamy kropkę, oznaczającą dziesiętne miejsce, pozostawiamy tylko jedną
+        if (cleanedText.contains(".")) {
+            String[] parts = cleanedText.split("\\.");
+            if (parts.length > 1) {
+                cleanedText = parts[0] + "." + parts[1];
+            }
+        }
+
+        return cleanedText;
     }
 }
