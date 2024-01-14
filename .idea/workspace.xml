@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="PALIWO">
-      <change afterPath="$PROJECT_DIR$/fuel.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/cash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/fuel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/java/project/SettingsDialog.java" afterDir="false" />
+    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="Paliwo koszty itd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/FuelSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Fuel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fuel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fuel.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Travel.java" afterDir="false" />
     </list>
@@ -189,7 +182,7 @@
       <workItem from="1703245440160" duration="2686000" />
       <workItem from="1703272832682" duration="8280000" />
       <workItem from="1705238465460" duration="1571000" />
-      <workItem from="1705240064986" duration="7987000" />
+      <workItem from="1705240064986" duration="9889000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -359,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705244227811</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Paliwo koszty itd">
+      <created>1705252707438</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1705252707438</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +404,8 @@
     <MESSAGE value="Przygotowanie pod edit i komentarze" />
     <MESSAGE value="poprawka" />
     <MESSAGE value="PALIWO" />
-    <option name="LAST_COMMIT_MESSAGE" value="PALIWO" />
+    <MESSAGE value="Paliwo koszty itd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Paliwo koszty itd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -413,6 +414,50 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pl/java/project/SettingsDialog.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pl/java/project/SettingsDialog.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pl/java/project/ShowDetails.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pl/java/project/ShowDetails.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pl/java/project/Travel.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pl/java/project/Travel.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pl/java/project/Travel.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/pl/java/project/Travel.java</url>
+          <line>67</line>
+          <properties class="pl.java.project.Travel" method="fuelCost">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

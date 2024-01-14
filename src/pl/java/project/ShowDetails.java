@@ -87,7 +87,7 @@ public class ShowDetails extends JDialog {
         toPlaceLabel.setText("Dokąd: " + selectedTravel.getToPlace());
         durationLabel.setText("Czas: " + selectedTravel.getDuration());
         fuelConsumption.setText("Paliwo: " + selectedTravel.fuelConsumption(firstValue) + " litry");
-        fuelCost.setText("Koszt: " + selectedTravel.fuelCost(String.valueOf(firstValue), secondValue));
+        fuelCost.setText("Koszt: " + selectedTravel.fuelCost(selectedTravel.fuelConsumption(firstValue), secondValue));
 
         reader.close();
 
