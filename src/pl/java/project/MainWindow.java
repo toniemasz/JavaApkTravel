@@ -1,7 +1,6 @@
 package pl.java.project;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
@@ -16,9 +15,7 @@ public class MainWindow {
     private JButton readButton;
     private JList<String> list1;
     private JButton settingsButton;
-    private ShowDetails detailsDialog;
     JPanel panel1;
-    DistanceMatrixAPIExample googleMaps = new DistanceMatrixAPIExample();
     TravelManage tManage = new TravelManage();
 
     public MainWindow() {
@@ -44,16 +41,12 @@ public class MainWindow {
         readButton.addActionListener(e -> {
             List<Travel> loadedTravels = FilesManager.loadFromFile("travels.txt");
 
-            if (loadedTravels != null) {
-                tManage.addToTravelListAll(loadedTravels);
-                list1.setModel(tManage.displayTravelList().getModel());
-                list1.setVisible(true);
-                JOptionPane.showMessageDialog(null, "Wczytano podróże z pliku.");
+            tManage.addToTravelListAll(loadedTravels);
+            list1.setModel(tManage.displayTravelList().getModel());
+            list1.setVisible(true);
+            JOptionPane.showMessageDialog(null, "Wczytano podróże z pliku.");
 
 
-            } else {
-                JOptionPane.showMessageDialog(null, "Błąd podczas wczytywania z pliku.", "Błąd", JOptionPane.ERROR_MESSAGE);
-            }
         });
 
 
@@ -104,7 +97,7 @@ public class MainWindow {
             // Pobieramy obiekt Travel na podstawie tytułu
             Travel selectedTravel = findTravelByTitle(selectedTravelTitle, model);
 
-                detailsDialog = new ShowDetails(selectedTravel, panel1,tManage);
+            ShowDetails detailsDialog = new ShowDetails(selectedTravel, panel1, tManage);
                 detailsDialog.pack();
                 detailsDialog.setVisible(true);
 
