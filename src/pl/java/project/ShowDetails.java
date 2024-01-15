@@ -2,13 +2,9 @@ package pl.java.project;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 
 public class ShowDetails extends JDialog {
     public JPanel contentPane;
@@ -21,10 +17,6 @@ public class ShowDetails extends JDialog {
     private JButton linkDoTrasyButton;
     private JLabel fuelConsumption;
     private JLabel fuelCost;
-
-    private Travel selectedTravel;
-    private int selectedIndex;
-    private TravelManage tManage;
 
     public void transformIcons() {
         transformLabelIcon(kilometersLabel);
@@ -59,15 +51,13 @@ public class ShowDetails extends JDialog {
         }
     }
 
-    public ShowDetails(Travel selectedTravel, JPanel mainWindow, TravelManage tManage) throws IOException {
+    public ShowDetails(Travel selectedTravel, JPanel mainWindow) throws IOException {
 
         BufferedReader reader = new BufferedReader(new FileReader("fuel.txt"));
         double firstValue = Double.parseDouble(reader.readLine());// fuelConsumtion
         // Wczytaj drugą wartość
         double secondValue = Double.parseDouble(reader.readLine());// fuelCost
 
-        this.selectedTravel = selectedTravel;
-        this.tManage = tManage;
         transformIcons();
         setContentPane(contentPane);
         setModal(true);
@@ -96,20 +86,12 @@ public class ShowDetails extends JDialog {
             link.openLink();
 
         });
-        buttonOK.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                dispose();
-            }
-        });
+
+        buttonOK.addActionListener(e -> dispose());
 
 
         // call onCancel() when cross is clicked
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-    }
-
-
-    private void onOK() {
-        dispose();
     }
 
 }

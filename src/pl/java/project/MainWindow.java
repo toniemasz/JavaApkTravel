@@ -97,7 +97,7 @@ public class MainWindow {
             // Pobieramy obiekt Travel na podstawie tytułu
             Travel selectedTravel = findTravelByTitle(selectedTravelTitle, model);
 
-            ShowDetails detailsDialog = new ShowDetails(selectedTravel, panel1, tManage);
+            ShowDetails detailsDialog = new ShowDetails(selectedTravel, panel1);
                 detailsDialog.pack();
                 detailsDialog.setVisible(true);
 

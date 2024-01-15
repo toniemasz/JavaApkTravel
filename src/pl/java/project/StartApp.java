@@ -26,12 +26,9 @@ public class StartApp {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
-        ZACZYNAMYButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                frame.dispose();
-                new Window();
-            }
+        ZACZYNAMYButton.addActionListener(e -> {
+            frame.dispose();
+            new Window();
         });
     }
 }
