@@ -10,7 +10,9 @@ public class Runner {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
+
                 new StartApp();
+                
             }
         });
     }

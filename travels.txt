@@ -1,2 +1,1 @@
-Trasa1,374.0,Kluczewo 64-234,Warszawa,3 hours 51 mins
-Trasa2,536.0,Kraków,Praga,5 hours 34 mins
+kkkkk,183.0,poznan,wroclaw,2 hours 5 mins

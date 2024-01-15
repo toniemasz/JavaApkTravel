@@ -6,8 +6,6 @@ import java.util.List;
 
 public class FilesManager {
 
-    TravelManage travelManage = new TravelManage();
-
     public static void saveToFile(List<Travel> travelList, String fileName) {
         try (PrintWriter writer = new PrintWriter(new FileWriter(fileName))) {
             for (Travel travel : travelList) {
@@ -19,6 +17,7 @@ public class FilesManager {
             e.printStackTrace();
         }
     }
+
 
     public static List<Travel> loadFromFile(String fileName) {
         List<Travel> loadedTravels = new ArrayList<>();

@@ -92,24 +92,9 @@ public class ShowDetails extends JDialog {
         reader.close();
 
         linkDoTrasyButton.addActionListener(e -> {
-            GoogleMapsLinkGeneratorApp link = new GoogleMapsLinkGeneratorApp(selectedTravel.getFromPlace(),selectedTravel.getToPlace());
-            link.getLink();
-            Desktop desktop = Desktop.getDesktop();
+                GoogleMapsLinkGeneratorApp link = new GoogleMapsLinkGeneratorApp(selectedTravel.getFromPlace(),selectedTravel.getToPlace());
+            link.openLink();
 
-            // Adres URL do otwarcia
-            String link2 = link.getLink();
-
-            URI uri = null;
-            try {
-                uri = new URI(link2);
-            } catch (URISyntaxException ex) {
-                throw new RuntimeException(ex);
-            }
-            try {
-                desktop.browse(uri);
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
         });
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {

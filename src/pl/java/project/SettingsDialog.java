@@ -29,17 +29,16 @@ public class SettingsDialog extends JDialog {
 
         fuelConsumptionField = new JTextField();
         fuelPriceField = new JTextField();
+        JButton saveButton = new JButton("Zapisz");
+
 
         fuelPriceField.setToolTipText("Wpisuj wartości: np 5.4");
         fuelConsumptionField.setToolTipText("Wpisuj wartości: np 5.4");
 
-        JButton saveButton = new JButton("Zapisz");
-        saveButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                saveSettings();
 
-            }
+
+        saveButton.addActionListener(e -> {
+            saveSettings();
         });
 
         add(fuelConsumptionLabel);
@@ -47,7 +46,6 @@ public class SettingsDialog extends JDialog {
         add(fuelPriceLabel);
         add(fuelPriceField);
         add(saveButton);
-
         pack();
         setLocationRelativeTo(null);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);

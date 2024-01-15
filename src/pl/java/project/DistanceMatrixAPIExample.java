@@ -1,7 +1,7 @@
 package pl.java.project;
 
 import java.io.*;
-import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Properties;
@@ -14,11 +14,28 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
-public class DistanceMatrixAPIExample {
+public class DistanceMatrixAPIExample implements ApiRunInterface{
+    private String ApiKey;
+
+    public static class DistanceDurationResult {
+        private double distance;
+        private String duration;
+
+        private DistanceDurationResult(double distance, String duration) {
+            this.distance = distance;
+            this.duration = duration;
+        }
+
+        public double getDistance() {
+            return distance;
+        }
+
+        public String getDuration() {
+            return duration;
+        }
+    }
 
 
-
-    String ApiKey;
 
     private static String getApiKey() {
         String apiKey = null;
@@ -33,61 +50,15 @@ public class DistanceMatrixAPIExample {
         return apiKey;
     }
 
-    public static class DistanceDurationResult {
-        private double distance;
-        private String duration;
 
-        public DistanceDurationResult(double distance, String duration) {
-            this.distance = distance;
-            this.duration = duration;
-        }
 
-        public double getDistance() {
-            return distance;
-        }
-
-        public String getDuration() {
-            return duration;
-        }
-    }
-
-    public static DistanceDurationResult runExample(String origin, String destination) {
+    public static DistanceDurationResult generateApiResponseOriginDestination(String origin, String destination) {
         double distance = 0;
-        String distanceText = null;
+        String distanceText;
         String duration = null;
         try {
-            // Tworzymy URL na podstawie zapytania do API
-            String apiKey = getApiKey();
 
-            distanceText = "";
-            duration = "";
-
-            // Kodujemy adresy URL
-            String encodedOrigin = URLEncoder.encode(origin, "UTF-8");
-            String encodedDestination = URLEncoder.encode(destination, "UTF-8");
-
-            String urlString = "https://maps.googleapis.com/maps/api/distancematrix/xml"
-                    + "?origins=" + encodedOrigin
-                    + "&destinations=" + encodedDestination
-                    + "&units=metric"
-                    + "&key=" + apiKey;
-
-            URL url = new URL(urlString);
-
-            // Ustawiamy połączenie HTTP
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setRequestMethod("GET");
-
-            // Odczytujemy odpowiedź
-            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-            StringBuilder response = new StringBuilder();
-            String line;
-            while ((line = reader.readLine()) != null) {
-                response.append(line);
-            }
-            reader.close();
-
-            System.out.println(response);
+            URL url = createUrlAskApi(origin,destination);
 
             // Parsujemy odpowiedź XML
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -107,8 +78,8 @@ public class DistanceMatrixAPIExample {
                 distance = Double.parseDouble(distanceText);
 
 
-                System.out.println("Origin: " + originAddress);
-                System.out.println("Destination: " + destinationAddress);
+                System.out.println("Start: " + originAddress);
+                System.out.println("End: " + destinationAddress);
                 System.out.println("Duration: " + duration);
                 System.out.println("Distance: " + distanceText);
             } else {
@@ -122,6 +93,23 @@ public class DistanceMatrixAPIExample {
 
         }
         return new DistanceDurationResult(distance, duration);
+    }
+
+    private static URL createUrlAskApi(String origin, String destination) throws UnsupportedEncodingException, MalformedURLException {
+        String apiKey = getApiKey();
+
+        // Kodujemy adresy URL
+        String encodedOrigin = URLEncoder.encode(origin, "UTF-8");
+        String encodedDestination = URLEncoder.encode(destination, "UTF-8");
+
+        String urlString = "https://maps.googleapis.com/maps/api/distancematrix/xml"
+                + "?origins=" + encodedOrigin
+                + "&destinations=" + encodedDestination
+                + "&units=metric"
+                + "&key=" + apiKey;
+
+        URL url = new URL(urlString);
+        return url;
     }
 
     private static String extractNumber(String text) {

@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="Naprawiony błąd z liczenia kosztów">
+    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="poprawki">
+      <change afterPath="$PROJECT_DIR$/src/pl/java/project/ApiRunInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/java/project/EditTravelDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/java/project/NewTravelPane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fuel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fuel.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Travel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/FilesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/FilesManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Fuel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/GoogleMapsLinkGeneratorApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/GoogleMapsLinkGeneratorApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/SettingsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/SettingsDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/travels.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +38,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -67,7 +77,7 @@
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Debugger_Data_Views_Java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -184,7 +194,9 @@
       <workItem from="1703272832682" duration="8280000" />
       <workItem from="1705238465460" duration="1571000" />
       <workItem from="1705240064986" duration="9996000" />
-      <workItem from="1705260053456" duration="1933000" />
+      <workItem from="1705260053456" duration="1970000" />
+      <workItem from="1705337051340" duration="325000" />
+      <workItem from="1705344998574" duration="5816000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -368,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705254423709</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="poprawki">
+      <created>1705263765634</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1705263765634</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +434,8 @@
     <MESSAGE value="PALIWO" />
     <MESSAGE value="Paliwo koszty itd" />
     <MESSAGE value="Naprawiony błąd z liczenia kosztów" />
-    <option name="LAST_COMMIT_MESSAGE" value="Naprawiony błąd z liczenia kosztów" />
+    <MESSAGE value="poprawki" />
+    <option name="LAST_COMMIT_MESSAGE" value="poprawki" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -424,16 +444,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/pl/java/project/SettingsDialog.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/pl/java/project/SettingsDialog.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -8,10 +8,6 @@ import java.io.IOException;
 import java.util.List;
 
 public class MainWindow {
-
-    DistanceMatrixAPIExample googleMaps = new DistanceMatrixAPIExample();
-    TravelManage tManage = new TravelManage();
-    JPanel panel1;
     private JButton newTravelButton;
     private JButton editButton;
     private JButton removeTravelButton;
@@ -21,10 +17,11 @@ public class MainWindow {
     private JList<String> list1;
     private JButton settingsButton;
     private ShowDetails detailsDialog;
+    JPanel panel1;
+    DistanceMatrixAPIExample googleMaps = new DistanceMatrixAPIExample();
+    TravelManage tManage = new TravelManage();
 
     public MainWindow() {
-
-
 
         removeTravelButton.addActionListener(e -> {
             removeFromList();
@@ -41,7 +38,6 @@ public class MainWindow {
         });
 
         saveButton.addActionListener(e -> {
-            FilesManager file = new FilesManager();
             FilesManager.saveToFile(tManage.travelList, "travels.txt");
         });
 
@@ -85,81 +81,16 @@ public class MainWindow {
         });
 
         newTravelButton.addActionListener(e -> {
-            String title = JOptionPane.showInputDialog(null, "Wpisz Tytuł");
-            if (title == null || title.trim().isEmpty()) {
-                // Jeżeli tytuł jest pusty, przypisz domyślną wartość "Untitled"
-                title = "Untitled";
-            }
-            String fromPlace = JOptionPane.showInputDialog(null, "Wpisz skąd chcesz jechać");
-            String toPlace = JOptionPane.showInputDialog(null, "Wpisz dokąd");
-            DistanceMatrixAPIExample.DistanceDurationResult apiResult = googleMaps.runExample(fromPlace, toPlace);
-            double km = apiResult.getDistance();
-            String duration = apiResult.getDuration();
 
-            Travel travel = new Travel(title, km, fromPlace, toPlace, duration);
-            System.out.println(travel);
+            Travel travel = new NewTravelPane().getTravel();
             tManage.addTravel(travel);
-            JOptionPane.showMessageDialog(null, "Nowa trasa z " + fromPlace + " do " + toPlace + " została dodana poprawnie");// test
-            System.out.println("Tytuły podróży: " + tManage.displayTravelList().getModel());
+
            updateList();
         });
     }
 
     private void editFromList() {
-        int selectedIndex = list1.getSelectedIndex();
-
-        if (selectedIndex >= 0 && selectedIndex < tManage.getTravelList().size()) {
-            Travel selectedTravel = tManage.getTravelList().get(selectedIndex);
-
-            // Zapisz pierwotne wartości FromPlace i ToPlace
-            String originalFromPlace = selectedTravel.getFromPlace();
-            String originalToPlace = selectedTravel.getToPlace();
-
-            // Utwórz okno dialogowe z polami do edycji
-            JPanel editPanel = new JPanel(new GridLayout(4, 2));
-            JTextField titleField = new JTextField(selectedTravel.getTitle());
-            JTextField fromPlaceField = new JTextField(originalFromPlace);
-            JTextField toPlaceField = new JTextField(originalToPlace);
-
-            editPanel.add(new JLabel("Title:"));
-            editPanel.add(titleField);
-            editPanel.add(new JLabel("From Place:"));
-            editPanel.add(fromPlaceField);
-            editPanel.add(new JLabel("To Place:"));
-            editPanel.add(toPlaceField);
-
-            int result = JOptionPane.showConfirmDialog(null, editPanel, "Edytuj podróż",
-                    JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
-
-            if (result == JOptionPane.OK_OPTION) {
-                // Pobieramy nowe wartości z pól edycji
-                String newFromPlace = fromPlaceField.getText();
-                String newToPlace = toPlaceField.getText();
-                String newTitle = titleField.getText();
-
-                // Sprawdź, czy wartości FromPlace lub ToPlace zostały zmienione
-                if (!originalFromPlace.equals(newFromPlace) || !originalToPlace.equals(newToPlace)) {
-                    // Jeśli zmieniono, pobierz nowe dane z API
-                    DistanceMatrixAPIExample.DistanceDurationResult apiResult = googleMaps.runExample(newFromPlace, newToPlace);
-                    double km = apiResult.getDistance();
-                    String duration = apiResult.getDuration();
-
-                    // Wywołujemy metodę edycji w obiekcie TravelManage
-                    tManage.editTravel(selectedIndex, newFromPlace, newToPlace, duration, km, newTitle);
-                    updateList();
-                    JOptionPane.showMessageDialog(null, "Podróż edytowana pomyślnie");
-                } else {
-                    // Jeśli nie zmieniono, wykonaj standardową edycję bez dodatkowych kroków
-                    tManage.editTravel(selectedIndex, newFromPlace, newToPlace, selectedTravel.getDuration(), selectedTravel.getKilometres(), newTitle);
-                    updateList();
-                    JOptionPane.showMessageDialog(null, "Podróż edytowana pomyślnie");
-                }
-            } else {
-                JOptionPane.showMessageDialog(null, "Błąd: Zaznacz podróż do edycji", "Błąd", JOptionPane.ERROR_MESSAGE);
-            }
-        } else {
-            JOptionPane.showMessageDialog(null, "Błąd: Zaznacz podróż do edycji", "Błąd", JOptionPane.ERROR_MESSAGE);
-        }
+        new EditTravelDialog(tManage, list1);
     }
 
 
