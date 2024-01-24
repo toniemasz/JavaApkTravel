@@ -1,6 +1,9 @@
 package pl.java.project;
 
+import com.sun.tools.javac.Main;
+
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
@@ -74,11 +77,16 @@ public class MainWindow {
         });
 
         newTravelButton.addActionListener(e -> {
+            JFrame frame = new JFrame("Nowa Trasa");
+            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-            Travel travel = new NewTravelPane().getTravel();
-            tManage.addTravel(travel);
+            NewTravelPane newTravelPane = new NewTravelPane(list1,tManage);
+            frame.add(newTravelPane);
+            frame.pack();
+            frame.setVisible(true);
+            frame.setLocationRelativeTo(null);
+            updateList();
 
-           updateList();
         });
     }
 

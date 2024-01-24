@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="Ogólne poprawki w przejrzystości kodu">
+    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="Ogólne poprawki w przejrzystości kodu 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/ShowDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/StartApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/StartApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/NewTravelPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/NewTravelPane.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +158,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SliceToolwindowSettings">
+    <option name="autoScroll" value="true" />
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -186,7 +188,9 @@
       <workItem from="1705240064986" duration="9996000" />
       <workItem from="1705260053456" duration="1970000" />
       <workItem from="1705337051340" duration="325000" />
-      <workItem from="1705344998574" duration="6813000" />
+      <workItem from="1705344998574" duration="6905000" />
+      <workItem from="1705352086465" duration="64000" />
+      <workItem from="1706128198753" duration="3651000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -391,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705351445101</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Ogólne poprawki w przejrzystości kodu 2">
+      <created>1705351997359</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1705351997359</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,7 +451,8 @@
     <MESSAGE value="Naprawiony błąd z liczenia kosztów" />
     <MESSAGE value="poprawki" />
     <MESSAGE value="Ogólne poprawki w przejrzystości kodu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ogólne poprawki w przejrzystości kodu" />
+    <MESSAGE value="Ogólne poprawki w przejrzystości kodu 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ogólne poprawki w przejrzystości kodu 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -449,6 +461,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
