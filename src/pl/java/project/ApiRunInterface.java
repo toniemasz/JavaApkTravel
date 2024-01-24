@@ -6,8 +6,4 @@ public interface ApiRunInterface {
         return null;
     }
 
-    public static DistanceMatrixAPIExample.DistanceDurationResult runExample(String origin, String destination){
-
-        return null;
-    }
 }

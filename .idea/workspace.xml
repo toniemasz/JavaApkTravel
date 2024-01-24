@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="Ogólne poprawki w przejrzystości kodu 2">
+    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="Działa FINAL VERSION">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/NewTravelPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/NewTravelPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fuel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fuel.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/travels.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +190,8 @@
       <workItem from="1705337051340" duration="325000" />
       <workItem from="1705344998574" duration="6905000" />
       <workItem from="1705352086465" duration="64000" />
-      <workItem from="1706128198753" duration="3651000" />
+      <workItem from="1706128198753" duration="3962000" />
+      <workItem from="1706132411395" duration="117000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -402,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705351997359</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Działa FINAL VERSION">
+      <created>1706132082054</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1706132082054</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +460,8 @@
     <MESSAGE value="poprawki" />
     <MESSAGE value="Ogólne poprawki w przejrzystości kodu" />
     <MESSAGE value="Ogólne poprawki w przejrzystości kodu 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ogólne poprawki w przejrzystości kodu 2" />
+    <MESSAGE value="Działa FINAL VERSION" />
+    <option name="LAST_COMMIT_MESSAGE" value="Działa FINAL VERSION" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
