@@ -60,11 +60,9 @@ public class NewTravelPane extends JPanel {
 
             Travel newTravel = new Travel(title, km, fromPlace, toPlace, duration);
             tManage.addTravel(newTravel);
-
-            // Aktualizuj listę
             updateList();
         } else {
-            JOptionPane.showMessageDialog(null, "Błąd podczas pobierania danych z API.");
+            System.out.println("Błąd");
         }
     }
 

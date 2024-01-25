@@ -67,11 +67,13 @@ public class DistanceMatrixAPIExample implements ApiRunInterface{
 
             // Pobieramy potrzebne informacje z XML
             String status = document.getElementsByTagName("status").item(0).getTextContent();
+
             if ("OK".equals(status)) {
                 String originAddress = document.getElementsByTagName("origin_address").item(0).getTextContent();
                 String destinationAddress = document.getElementsByTagName("destination_address").item(0).getTextContent();
                 distanceText = document.getElementsByTagName("text").item(1).getTextContent();
                 duration = document.getElementsByTagName("text").item(0).getTextContent();
+
                 System.out.println(duration);
                 System.out.println(distanceText);
                 distanceText = extractNumber(distanceText);
@@ -84,13 +86,11 @@ public class DistanceMatrixAPIExample implements ApiRunInterface{
                 System.out.println("Distance: " + distanceText);
             } else {
                 System.out.println("Error: " + status);
-                JOptionPane.showMessageDialog(null,"brak połączenia z API wpisz api_key w odpowiedni plik","Błąd",JOptionPane.ERROR_MESSAGE);
-                return null;
             }
 
-        } catch (IOException | ParserConfigurationException | SAXException e) {
+        } catch (IOException | ParserConfigurationException | NullPointerException |SAXException e) {
             JOptionPane.showMessageDialog(null,"Nie znaleziono trasy","Błąd",JOptionPane.ERROR_MESSAGE);
-
+            return null;
         }
         return new DistanceDurationResult(distance, duration);
     }

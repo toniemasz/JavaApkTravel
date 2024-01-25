@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="Działa FINAL VERSION">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fuel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fuel.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/travels.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/NewTravelPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/NewTravelPane.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,6 +192,9 @@
       <workItem from="1705352086465" duration="64000" />
       <workItem from="1706128198753" duration="3962000" />
       <workItem from="1706132411395" duration="117000" />
+      <workItem from="1706132561810" duration="206000" />
+      <workItem from="1706185938734" duration="367000" />
+      <workItem from="1706186320105" duration="1700000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -410,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706132082054</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Działa FINAL VERSION">
+      <created>1706132602981</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1706132602981</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,11 +480,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
