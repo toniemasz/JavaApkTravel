@@ -1,26 +1,20 @@
 package pl.java.project;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.util.List;
 
 public class StartApp {
     private JButton ZACZYNAMYButton;
     private JPanel Panel1;
     private JFrame frame;
 
-    public StartApp() {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                initializeGUI();
-            }
-        });
+    public StartApp(List<Travel> travelList) {
+        SwingUtilities.invokeLater(() -> initializeGUI(travelList));
     }
 
-    private void initializeGUI() {
+    private void initializeGUI(List<Travel> travelList) {
         frame = new JFrame("Aplikacja do planowania podróży");
-        frame.setContentPane(Panel1);
+        frame.setContentPane(new MainWindow(travelList).panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 500);
         frame.setLocationRelativeTo(null);
@@ -28,7 +22,7 @@ public class StartApp {
 
         ZACZYNAMYButton.addActionListener(e -> {
             frame.dispose();
-            new Window();
+            new Window(travelList);
         });
     }
 }

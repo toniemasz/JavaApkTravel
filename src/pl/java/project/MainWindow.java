@@ -21,8 +21,10 @@ public class MainWindow {
     JPanel panel1;
     TravelManage tManage = new TravelManage();
 
-    public MainWindow() {
-
+    public MainWindow(List<Travel> travelList) {
+        tManage = new TravelManage();
+        tManage.addToTravelListAll(travelList);
+        updateList();
         removeTravelButton.addActionListener(e -> {
             removeFromList();
         });

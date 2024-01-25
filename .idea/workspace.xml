@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="Działa FINAL VERSION">
+    <list default="true" id="cf0e5ea4-5beb-47a3-87fe-43182a73391a" name="Changes" comment="FINAL FINAL VERSION FINAL FINAL">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/DistanceMatrixAPIExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/java/project/NewTravelPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/NewTravelPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/StartApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/StartApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/java/project/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/java/project/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +196,8 @@
       <workItem from="1706132411395" duration="117000" />
       <workItem from="1706132561810" duration="206000" />
       <workItem from="1706185938734" duration="367000" />
-      <workItem from="1706186320105" duration="1700000" />
+      <workItem from="1706186320105" duration="1773000" />
+      <workItem from="1706189920435" duration="1900000" />
     </task>
     <task id="LOCAL-00001" summary="1 wersja po kliknięciu ZACZYNAMY pojawia się nowe okno">
       <created>1701887375464</created>
@@ -420,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706132602981</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="FINAL FINAL VERSION FINAL FINAL">
+      <created>1706188095533</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1706188095533</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +481,8 @@
     <MESSAGE value="Ogólne poprawki w przejrzystości kodu" />
     <MESSAGE value="Ogólne poprawki w przejrzystości kodu 2" />
     <MESSAGE value="Działa FINAL VERSION" />
-    <option name="LAST_COMMIT_MESSAGE" value="Działa FINAL VERSION" />
+    <MESSAGE value="FINAL FINAL VERSION FINAL FINAL" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINAL FINAL VERSION FINAL FINAL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
